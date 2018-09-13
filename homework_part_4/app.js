@@ -11,14 +11,24 @@
 // 2. Palindrome
 // Make sure your function will give the correct answer for words with capital letters.
 
-const isPalindrome = (string) => {
-    if (string === string.split('').reverse().join('')) {
-        return(string + ' is palindrome.');
-    }
-    else {
-        return(string + ' is not palindrome.');
-    }
-}
-console.log(isPalindrome("Radar"));
-console.log(isPalindrome("Hello"));
+// const isPalindrome = (string) => {
+//     if (string === string.split('').reverse().join('')) {
+//         return(string + ' is palindrome.');
+//     }
+//     else {
+//         return(string + ' is not palindrome.');
+//     }
+// }
+// console.log(isPalindrome("Radar"));
+// console.log(isPalindrome("Hello"));
 
+
+// 3. Digit Sum
+// Write a function sumDigits that accepts a number and returns the sum of its digits.
+
+const sumDigits = (num) => {
+    return num.toString().split('').reduce(function (a, b) {
+        return parseInt(a) + parseInt(b);
+    })
+}
+console.log(sumDigits(421));
