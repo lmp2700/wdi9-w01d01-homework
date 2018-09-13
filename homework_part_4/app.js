@@ -8,3 +8,17 @@
 // What are the implications of the ability of a function to return a value?
 //     It allows the function to access the data further on in the code
 
+// 2. Palindrome
+// Make sure your function will give the correct answer for words with capital letters.
+
+const isPalindrome = (string) => {
+    if (string === string.split('').reverse().join('')) {
+        return(string + ' is palindrome.');
+    }
+    else {
+        return(string + ' is not palindrome.');
+    }
+}
+console.log(isPalindrome("Radar"));
+console.log(isPalindrome("Hello"));
+
